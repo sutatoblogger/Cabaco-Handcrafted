@@ -9,19 +9,13 @@
     <meta name="keywords" content="Kerajinan Kulit Asli, Pabrik Kulit Jawa Barat, Panarilla Tray Holder, Produsen Kulit B2B, Ekspor Kerajinan Kulit, Cabaco Handcrafted">
     <meta name="author" content="Sutato Digital Group">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://cabaco-premium.vercel.app/">
+    <link rel="canonical" href="https://cabaco-handcrafted.vercel.app/">
     
     <meta property="og:title" content="CABACO Handcrafted - Bukan Sekedar Kulit, Ini Karya Seni.">
     <meta property="og:description" content="Koleksi kerajinan kulit handmade premium untuk pasar lokal dan ekspor.">
     <meta property="og:image" content="hero-cabaco-tray.webp">
 
     <link rel="preload" as="image" href="hero-cabaco-tray.webp" fetchpriority="high">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,800;1,900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,800;1,900&display=swap" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,800;1,900&display=swap"></noscript>
 
     <style>
         /* PURE VANILLA CSS OPTIMIZATION - LUXURY GOLD ACCENTS */
@@ -34,6 +28,7 @@
         }
         
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        /* Mengandalkan Font Sistem Native untuk FCP Super Cepat */
         html { scroll-behavior: smooth; font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif; background-color: var(--bg-dark); color: #fff; overflow-x: hidden; }
         img { max-width: 100%; height: auto; display: block; }
         a { text-decoration: none; color: inherit; }
@@ -44,14 +39,15 @@
         .text-gradient { background: linear-gradient(to right, #fff, var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .italic-black { font-weight: 900; font-style: italic; }
 
-        /* HEADER DENGAN LOGO CABACO */
+        /* HEADER DENGAN LOGO CABACO YANG SUDAH DIPERBAIKI */
         .header-nav { position: fixed; top: 0; width: 100%; z-index: 100; padding: 15px 24px; display: flex; justify-content: space-between; align-items: center; background: rgba(0,0,0,0.8); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255,255,255,0.05); }
-        .brand-logo img { width: auto; height: 35px; filter: brightness(0) invert(1); } /* Logo dibikin putih agar elegan di background gelap */
+        /* Filter Invert Dihapus agar Logo Asli Tampil Sempurna */
+        .brand-logo img { width: auto; height: 38px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1); } 
         .nav-links { display: none; gap: 30px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--text-muted); }
         .nav-links a:hover { color: var(--gold); transition: 0.3s; }
         @media (min-width: 768px) { .nav-links { display: flex; } }
 
-        /* AURA BUTTON (GPU ACCELERATED) */
+        /* AURA BUTTON */
         .aura-btn-glow {
             position: relative; padding: 12px 24px; border-radius: 6px;
             background: #000; color: #fff; font-weight: 800; font-size: 11px;
@@ -72,7 +68,7 @@
         /* HERO HACK FOR SPEED */
         .hero-section { position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 20px; overflow: hidden; }
         .bg-layer-hero { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; }
-        .overlay-layer-hero { position: absolute; inset: 0; background: linear-gradient(rgba(8,8,8,0.3), rgba(8,8,8,0.95)); z-index: -1; }
+        .overlay-layer-hero { position: absolute; inset: 0; background: linear-gradient(rgba(8,8,8,0.4), rgba(8,8,8,0.95)); z-index: -1; }
         .hero-content { position: relative; z-index: 1; margin-top: 50px; }
 
         .hero-title { font-size: clamp(30px, 6vw, 80px); font-weight: 900; line-height: 1.1; margin-bottom: 25px; letter-spacing: -1px; text-transform: uppercase; }
@@ -96,7 +92,6 @@
         }
         .bento-card:hover { border-color: rgba(212, 175, 55, 0.4); transform: translateY(-5px); background: rgba(255,255,255,0.04); }
 
-        /* Ukuran Kartu Disesuaikan untuk Katalog Kerajinan */
         .card-large { grid-column: span 12; min-height: 450px; display: flex; flex-direction: column; justify-content: flex-end; padding: 40px; }
         @media (min-width: 768px) { .card-large { grid-column: span 8; min-height: 500px; } }
         .card-large .bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.3; transition: transform 1.5s; z-index: -1; }
@@ -113,19 +108,17 @@
         .card-promo { grid-column: span 12; padding: 40px; text-align: center; display: flex; flex-direction: column; justify-content: center; border-color: rgba(212, 175, 55, 0.2); }
         @media (min-width: 768px) { .card-promo { grid-column: span 6; } }
 
-        /* Typography Card */
         .card-tag { color: var(--gold); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px; display: block; }
         .card-title { font-size: 26px; font-weight: 900; margin-bottom: 10px; transition: color 0.3s; text-transform: uppercase;}
         .bento-card:hover .card-title { color: var(--gold); }
         .card-desc { color: var(--text-muted); font-size: 14px; margin-bottom: 20px; line-height: 1.6; }
-        .card-price-small { font-size: 16px; font-weight: 900; color: var(--gold); margin: 15px 0; }
 
-        /* MID PARALLAX (INLINE IMG HACK) */
+        /* MID PARALLAX */
         .mid-parallax { position: relative; padding: 120px 20px; text-align: center; overflow: hidden; display: flex; align-items: center; justify-content: center;}
         .bg-layer-mid { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -2; opacity: 0.3;}
         .overlay-layer-mid { position: absolute; inset: 0; background: linear-gradient(rgba(8,8,8,0.8), rgba(8,8,8,0.9)); z-index: -1; }
 
-        /* VISIBLE LSI INJECTION & FAQ */
+        /* FAQ */
         .faq-section { margin-top: 60px; padding-top: 60px; border-top: 1px solid rgba(255,255,255,0.05); }
         .faq-container { display: flex; flex-direction: column; gap: 15px; }
         details { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; overflow: hidden; transition: all 0.3s; }
@@ -146,7 +139,7 @@
 
     <header class="header-nav">
         <div class="brand-logo">
-            <img src="logo-cabaco.png" alt="Logo Cabaco Handcrafted Kerajinan Kulit Asli Jawa Barat" width="120" height="42" loading="lazy">
+            <img src="logo-cabaco.png" alt="Logo Cabaco Handcrafted Kerajinan Kulit Asli Jawa Barat">
         </div>
         <nav class="nav-links">
             <a href="#hero">Beranda</a>
@@ -254,7 +247,7 @@
 
     <footer class="footer">
         <div class="brand-logo" style="margin-bottom: 20px;">
-            <img src="logo-cabaco.png" alt="Logo Cabaco Bawah" width="100" height="35" style="margin: 0 auto; filter: brightness(0) invert(1);">
+            <img src="logo-cabaco.png" alt="Logo Cabaco Bawah" width="100" height="38" style="margin: 0 auto; border-radius: 4px; border: 1px solid rgba(255,255,255,0.1);">
         </div>
         <p style="font-size: 10px; font-weight: 800; color: #555; letter-spacing: 5px;">© 2026 CABACO HANDCRAFTED • JAWA BARAT</p>
     </footer>
@@ -262,8 +255,14 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             setTimeout(function() {
-                // Skrip pelacak bisa dimasukkan di sini jika ada
-            }, 3500);
+                // Suntik Google Fonts secara rahasia setelah loading selesai
+                var fontLink = document.createElement('link');
+                fontLink.rel = 'stylesheet';
+                fontLink.href = 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,700;0,800;0,900;1,800;1,900&display=swap';
+                document.head.appendChild(fontLink);
+                
+                // Jika nanti ada script pelacak (Pixel/GTM), taruh di sini
+            }, 3500); 
         });
     </script>
 
@@ -273,7 +272,7 @@
         "@context": "https://schema.org",
         "@type": "Store",
         "name": "CABACO Handcrafted",
-        "image": "https://cabaco-premium.vercel.app/hero-cabaco-tray.webp",
+        "image": "https://cabaco-handcrafted.vercel.app/hero-cabaco-tray.webp",
         "description": "Produsen kerajinan kulit asli premium dari Jawa Barat. Pemenang Good Design Indonesia 2022. Melayani B2B, Ekspor, dan LPSE LKPP.",
         "priceRange": "$$$",
         "telephone": "+628111929495",
@@ -282,28 +281,6 @@
           "addressRegion": "Jawa Barat",
           "addressCountry": "ID"
         }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Apakah produk CABACO bisa melayani pengiriman Ekspor Internasional?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sangat bisa. Kami telah memiliki pengalaman ekspor kerajinan kulit asli secara rutin ke Australia, United Kingdom (UK), dan Philippines."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Apakah CABACO terdaftar untuk Pengadaan Barang Instansi Pemerintah / LPSE?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Benar. CABACO memiliki akun LPSE LKPP aktif. Kami siap berkolaborasi untuk proyek pengadaan B2B maupun tender pemerintah."
-            }
-          }
-        ]
       }
     ]
     </script>
